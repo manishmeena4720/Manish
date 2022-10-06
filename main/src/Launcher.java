@@ -16,7 +16,7 @@ public class Launcher {
 
     public static void main(String[] args) throws Exception{
         System.out.println("abc");
-        String file = convertFileIntoString("Deals.json");
+        String file = convertFileIntoString("resources/DueBillsSetup.json");
         //System.out.println(file);
         for (int i = 0; i < file.length(); i++) {
             if (file.charAt(i) == 'f' && file.substring(i,i+9).equals("fieldName")) {
