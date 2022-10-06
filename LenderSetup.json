@@ -1,0 +1,474 @@
+{
+  "assetType": "LENDER_SETUP",
+  "userId": "-1",
+  "fieldMetaData": {
+    "name": {
+      "fieldName": "name",
+      "changeType": "FLAT"
+    },
+    "codeName": {
+      "fieldName": "codeName",
+      "changeType": "FLAT"
+    },
+    "languages": {
+      "fieldName": "languages",
+      "changeType": "COMPLEX",
+      "childFieldMetadataMap": {
+        "documentDefault": {
+          "fieldName": "documentDefault",
+          "changeType": "FLAT"
+        }
+      }
+    },
+    "enableYearlyMilesForBalloon": {
+      "fieldName": "enableYearlyMilesForBalloon",
+      "changeType": "FLAT"
+    },
+    "tiers": {
+      "fieldName": "tiers",
+      "changeType": "COMPLEX_LIST",
+      "childFieldMetadataMap": {
+        "tiers": {
+          "fieldName": "tiers",
+          "changeType": "COMPLEX",
+          "childFieldMetadataMap": {
+            "code": {
+              "fieldName": "code",
+              "changeType": "FLAT"
+            },
+            "type": {
+              "fieldName": "type",
+              "changeType": "FLAT"
+            },
+            "name": {
+              "fieldName": "name",
+              "changeType": "FLAT"
+            }
+          }
+        }
+      }
+    },
+    "dealerId": {
+      "fieldName": "dealerId",
+      "changeType": "FLAT"
+    },
+    "tenantId": {
+      "fieldName": "tenantId",
+      "changeType": "FLAT"
+    },
+    "displayName": {
+      "fieldName": "displayName",
+      "changeType": "FLAT"
+    },
+    "evaultingRequired": {
+      "fieldName": "evaultingRequired",
+      "changeType": "FLAT"
+    },
+    "defaultLender": {
+      "fieldName": "defaultLender",
+      "changeType": "FLAT"
+    },
+    "fullTermBalloon": {
+      "fieldName": "fullTermBalloon",
+      "changeType": "FLAT"
+    },
+    "legalName": {
+      "fieldName": "legalName",
+      "changeType": "FLAT"
+    },
+    "financeReserveSplitPercentage": {
+      "fieldName": "financeReserveSplitPercentage",
+      "changeType": "FLAT"
+    },
+    "code": {
+      "fieldName": "code",
+      "changeType": "FLAT"
+    },
+    "preferred": {
+      "fieldName": "preferred",
+      "changeType": "FLAT"
+    },
+    "osfLender": {
+      "fieldName": "osfLender",
+      "changeType": "FLAT"
+    },
+    "address": {
+      "fieldName": "address",
+      "changeType": "COMPLEX",
+      "childFieldMetadataMap": {
+        "address": {
+          "fieldName": "address",
+          "changeType": "FLAT"
+        },
+        "state": {
+          "fieldName": "state",
+          "changeType": "FLAT"
+        },
+        "city": {
+          "fieldName": "city",
+          "changeType": "FLAT"
+        },
+        "zipCode": {
+          "fieldName": "zipCode",
+          "changeType": "FLAT"
+        },
+        "phoneNumber": {
+          "fieldName": "phoneNumber",
+          "changeType": "FLAT"
+        },
+        "country": {
+          "fieldName": "country",
+          "changeType": "FLAT"
+        }
+      }
+    },
+    "financeReserveMethods": {
+      "fieldName": "financeReserveMethods",
+      "changeType": "COMPLEX_LIST",
+      "childFieldMetadataMap": {
+        "financeReserveMethods": {
+          "fieldName": "financeReserveMethods",
+          "changeType": "COMPLEX",
+          "childFieldMetadataMap": {
+            "paymentType": {
+              "fieldName": "paymentType",
+              "changeType": "FLAT"
+            },
+            "reserveType": {
+              "fieldName": "reserveType",
+              "changeType": "FLAT"
+            },
+            "value": {
+              "fieldName": "value",
+              "changeType": "FLAT"
+            }
+          }
+        }
+      }
+    },
+    "digitalRetailFinanceReserveMethods": {
+      "fieldName": "digitalRetailFinanceReserveMethods",
+      "changeType": "COMPLEX_LIST",
+      "childFieldMetadataMap": {
+        "digitalRetailFinanceReserveMethods": {
+          "fieldName": "digitalRetailFinanceReserveMethods",
+          "changeType": "COMPLEX",
+          "childFieldMetadataMap": {
+            "paymentType": {
+              "fieldName": "paymentType",
+              "changeType": "FLAT"
+            },
+            "reserveType": {
+              "fieldName": "reserveType",
+              "changeType": "FLAT"
+            },
+            "value": {
+              "fieldName": "value",
+              "changeType": "FLAT"
+            }
+          }
+        }
+      }
+    },
+    "feeMarkup": {
+      "fieldName": "feeMarkup",
+      "changeType": "FLAT"
+    },
+    "loanSupported": {
+      "fieldName": "loanSupported",
+      "changeType": "FLAT"
+    },
+    "leaseSupported": {
+      "fieldName": "leaseSupported",
+      "changeType": "FLAT"
+    },
+    "dispositionFee": {
+      "fieldName": "dispositionFee",
+      "changeType": "FLAT"
+    },
+    "migrated": {
+      "fieldName": "migrated",
+      "changeType": "FLAT"
+    },
+    "marketScanCodes": {
+      "fieldName": "marketScanCodes",
+      "changeType": "COMPLEX_LIST",
+      "childFieldMetadataMap": {
+        "marketScanCodes": {
+          "fieldName": "marketScanCodes",
+          "changeType": "COMPLEX",
+          "childFieldMetadataMap": {
+            "code": {
+              "fieldName": "code",
+              "changeType": "FLAT"
+            },
+            "type": {
+              "fieldName": "type",
+              "changeType": "FLAT"
+            }
+          }
+        }
+      }
+    },
+    "marketScan": {
+      "fieldName": "marketScan",
+      "changeType": "FLAT"
+    },
+    "lienHolder": {
+      "fieldName": "lienHolder",
+      "changeType": "FLAT"
+    },
+    "lienHolderAddress": {
+      "fieldName": "lienHolderAddress",
+      "changeType": "COMPLEX",
+      "childFieldMetadataMap": {
+        "address": {
+          "fieldName": "address",
+          "changeType": "FLAT"
+        },
+        "state": {
+          "fieldName": "state",
+          "changeType": "FLAT"
+        },
+        "city": {
+          "fieldName": "city",
+          "changeType": "FLAT"
+        },
+        "zipCode": {
+          "fieldName": "zipCode",
+          "changeType": "FLAT"
+        },
+        "phoneNumber": {
+          "fieldName": "phoneNumber",
+          "changeType": "FLAT"
+        },
+        "country": {
+          "fieldName": "country",
+          "changeType": "FLAT"
+        }
+      }
+    },
+    "sameAsLender": {
+      "fieldName": "sameAsLender",
+      "changeType": "FLAT"
+    },
+    "lienFilingCode": {
+      "fieldName": "lienFilingCode",
+      "changeType": "FLAT"
+    },
+    "hidden": {
+      "fieldName": "hidden",
+      "changeType": "FLAT"
+    },
+    "financeReserve": {
+      "fieldName": "financeReserve",
+      "changeType": "FLAT"
+    },
+    "enableTxFinanceCharge": {
+      "fieldName": "enableTxFinanceCharge",
+      "changeType": "FLAT"
+    },
+    "removeDemoMileageFromAnnualMileage": {
+      "fieldName": "removeDemoMileageFromAnnualMileage",
+      "changeType": "FLAT"
+    },
+    "aprMFType": {
+      "fieldName": "aprMFType",
+      "changeType": "FLAT"
+    },
+    "removeDemoMileageFromAnnualMileageDeciderValue": {
+      "fieldName": "removeDemoMileageFromAnnualMileageDeciderValue",
+      "changeType": "FLAT"
+    },
+    "vehicleMileCutOffForRemoveDemoMileage": {
+      "fieldName": "vehicleMileCutOffForRemoveDemoMileage",
+      "changeType": "FLAT"
+    },
+    "personalPropertyTaxLenderType": {
+      "fieldName": "personalPropertyTaxLenderType",
+      "changeType": "FLAT"
+    },
+    "firstPaymentWaivedDefaultValue": {
+      "fieldName": "firstPaymentWaivedDefaultValue",
+      "changeType": "FLAT"
+    },
+    "migratedLenderName": {
+      "fieldName": "migratedLenderName",
+      "changeType": "FLAT"
+    },
+    "acquisitionFeeMarkupAmt": {
+      "fieldName": "acquisitionFeeMarkupAmt",
+      "changeType": "FLAT"
+    },
+    "actualPenaltyPerMile": {
+      "fieldName": "actualPenaltyPerMile",
+      "changeType": "FLAT"
+    },
+    "penaltyPerMile": {
+      "fieldName": "penaltyPerMile",
+      "changeType": "FLAT"
+    },
+    "lienHolderLender": {
+      "fieldName": "lienHolderLender",
+      "changeType": "FLAT"
+    },
+    "useMPEqDispFeeWhenMpLtDispFee": {
+      "fieldName": "useMPEqDispFeeWhenMpLtDispFee",
+      "changeType": "FLAT"
+    },
+    "collectSecurityDepositWaiverReason": {
+      "fieldName": "collectSecurityDepositWaiverReason",
+      "changeType": "FLAT"
+    },
+    "removeDemoMileageFromAnnualMileageDisplayName": {
+      "fieldName": "removeDemoMileageFromAnnualMileageDisplayName",
+      "changeType": "FLAT"
+    },
+    "includeSecurityDeposits": {
+      "fieldName": "includeSecurityDeposits",
+      "changeType": "FLAT"
+    },
+    "feinNumber": {
+      "fieldName": "feinNumber",
+      "changeType": "FLAT"
+    },
+    "totalNumberOfSecurityDeposits": {
+      "fieldName": "totalNumberOfSecurityDeposits",
+      "changeType": "FLAT"
+    },
+    "roundSecurityDepositTo": {
+      "fieldName": "roundSecurityDepositTo",
+      "changeType": "FLAT"
+    },
+    "typeOfSecurityDeposit": {
+      "fieldName": "typeOfSecurityDeposit",
+      "changeType": "FLAT"
+    },
+    "lienPayOffAddress": {
+      "fieldName": "lienPayOffAddress",
+      "changeType": "COMPLEX",
+      "childFieldMetadataMap": {
+        "address": {
+          "fieldName": "address",
+          "changeType": "FLAT"
+        },
+        "state": {
+          "fieldName": "state",
+          "changeType": "FLAT"
+        },
+        "city": {
+          "fieldName": "city",
+          "changeType": "FLAT"
+        },
+        "zipCode": {
+          "fieldName": "zipCode",
+          "changeType": "FLAT"
+        },
+        "phoneNumber": {
+          "fieldName": "phoneNumber",
+          "changeType": "FLAT"
+        },
+        "country": {
+          "fieldName": "country",
+          "changeType": "FLAT"
+        }
+      }
+    },
+    "roundOffMileageToNearestThousand": {
+      "fieldName": "roundOffMileageToNearestThousand",
+      "changeType": "FLAT"
+    },
+    "lienPayOffAddressSameAsLienHolderAddress": {
+      "fieldName": "lienPayOffAddressSameAsLienHolderAddress",
+      "changeType": "FLAT"
+    },
+    "useReserveSplitInCalculationForLoan": {
+      "fieldName": "useReserveSplitInCalculationForLoan",
+      "changeType": "FLAT"
+    },
+    "useReserveSplitInCalculationForLease": {
+      "fieldName": "useReserveSplitInCalculationForLease",
+      "changeType": "FLAT"
+    },
+    "taxExemptForUseTax": {
+      "fieldName": "taxExemptForUseTax",
+      "changeType": "FLAT"
+    },
+    "addVehicleMilesToAnnualmiles": {
+      "fieldName": "addVehicleMilesToAnnualmiles",
+      "changeType": "FLAT"
+    },
+    "loanMaxMarkup": {
+      "fieldName": "loanMaxMarkup",
+      "changeType": "FLAT"
+    },
+    "leaseMaxMarkup": {
+      "fieldName": "leaseMaxMarkup",
+      "changeType": "FLAT"
+    },
+    "onePayMaxMarkup": {
+      "fieldName": "onePayMaxMarkup",
+      "changeType": "FLAT"
+    },
+    "overrideMaxMarkup": {
+      "fieldName": "overrideMaxMarkup",
+      "changeType": "FLAT"
+    },
+    "dispositionThresholdValue": {
+      "fieldName": "dispositionThresholdValue",
+      "changeType": "FLAT"
+    },
+    "terminationThresholdValue": {
+      "fieldName": "terminationThresholdValue",
+      "changeType": "FLAT"
+    },
+    "securityDepositWaiverReason": {
+      "fieldName": "securityDepositWaiverReason",
+      "changeType": "FLAT"
+    },
+    "freeMilesforResidualAdjustment": {
+      "fieldName": "freeMilesforResidualAdjustment",
+      "changeType": "FLAT"
+    },
+    "acquisitionFee": {
+      "fieldName": "acquisitionFee",
+      "changeType": "FLAT"
+    },
+    "paymentDueDateAdjustment": {
+      "fieldName": "paymentDueDateAdjustment",
+      "changeType": "FLAT"
+    },
+    "bankFeeUpfront": {
+      "fieldName": "bankFeeUpfront",
+      "changeType": "FLAT"
+    },
+    "onePay2DigitsAfterCommaMonthlyPayment": {
+      "fieldName": "onePay2DigitsAfterCommaMonthlyPayment",
+      "changeType": "FLAT"
+    },
+    "moneyFactorDecimalPoints": {
+      "fieldName": "moneyFactorDecimalPoints",
+      "changeType": "FLAT"
+    },
+    "lenderDetailsForDealerTrack": {
+      "fieldName": "lenderDetailsForDealerTrack",
+      "changeType": "COMPLEX_LIST",
+      "childFieldMetadataMap": {
+        "lenderDetailsForDealerTrack": {
+          "fieldName": "lenderDetailsForDealerTrack",
+          "changeType": "COMPLEX",
+          "childFieldMetadataMap": {
+            "name": {
+              "fieldName": "name",
+              "changeType": "FLAT"
+            },
+            "code": {
+              "fieldName": "code",
+              "changeType": "FLAT"
+            }
+          }
+        }
+      }
+    }
+  }
+}

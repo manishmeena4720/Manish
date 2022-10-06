@@ -1,0 +1,142 @@
+buildscript {
+    ext {
+        springBootVersion = '2.5.4'
+        openFeignVersion = '11.1'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+
+    }}
+
+
+plugins {
+    id 'java'
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+apply plugin: 'java-library'
+
+
+group 'salessettings'
+version '0.0.1'
+
+sourceCompatibility = 1.8
+
+ext['elasticsearch.version'] = '7.9.2'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'https://tkartifactory.tekioncloud.xyz/repository/tek-product-maven-snapshots'
+        credentials {
+            username = "${mavenUser}"
+            password = "${mavenPassword}"
+        }
+    }
+}
+
+configurations.all {
+    exclude group:"com.tekion.sdk", module: "coreextended"
+}
+
+jar {
+    enabled = false
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+    api('com.tekion.sdk:servicecommons:4.0.13-codemerge-SNAPSHOT')
+    api('com.tekion.sdk:essupport:4.0.15-SNAPSHOT')
+    compileOnly("org.projectlombok:lombok:1.18.20")
+    api("org.mapstruct:mapstruct-jdk8:1.3.1.Final")
+    annotationProcessor("org.mapstruct:mapstruct-processor:1.3.1.Final", "org.projectlombok:lombok:1.18.20")
+    api('com.tekion.sdk:mongosupport:4.0.4-SNAPSHOT')
+   api('com.tekion.sdk:exportlib:0.0.8-SNAPSHOT')
+    api('org.springframework.boot:spring-boot-starter-test')
+   api("org.springframework.boot:spring-boot-starter-web")
+    api group: 'org.apache.poi', name: 'poi', version: '4.1.0'
+    api group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.0'
+    api group: 'commons-fileupload', name: 'commons-fileupload', version: '1.4'
+    compileOnly('org.projectlombok:lombok:1.18.20')
+   api group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+    api project(":dataModel")
+    api project(":common")
+    api group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+    api("io.github.openfeign:feign-hystrix:${openFeignVersion}")
+    api("io.github.openfeign:feign-jackson:${openFeignVersion}")
+    api("io.github.openfeign:feign-core:${openFeignVersion}")
+    api("com.tekion.sdk:tekmetricregistry:4.0.2-SNAPSHOT")
+    api("io.github.openfeign:feign-slf4j:${openFeignVersion}")
+    api("io.github.openfeign:feign-okhttp:${openFeignVersion}")
+    compile('com.tekion.sdk:storagesupport:4.0.8-SNAPSHOT')
+            {
+                exclude group: 'com.tekion.sdk', module: 'tekionconstant'
+            }
+    api('com.tekion.sdk:tekionconstant:0.0.169-SNAPSHOT')
+    compile('com.tekion.sdk:externalevent:0.0.9-SNAPSHOT')
+    api("com.tekion.sdk:permissionsupport:0.0.5-SNAPSHOT")
+    api ('com.tekion.sdk:cachesupport:4.0.1-SNAPSHOT')
+            {
+                exclude group: 'com.tekion.sdk', module: 'tekionconstant'
+            }
+
+    api('com.tekion.sdk:kafkasupport:4.0.9-SNAPSHOT')
+    api('com.tekion.sdk:cachesupport:4.0.1-SNAPSHOT')
+            {
+                exclude group: 'com.tekion.sdk', module: 'tekionconstant'
+            }
+    api("org.apache.logging.log4j:log4j-core:2.17.1")
+    api('org.springframework.boot:spring-boot-starter-test')
+    api("org.springframework.cloud:spring-cloud-starter-loadbalancer:3.0.1")
+    api("org.springframework.boot:spring-boot-starter-web")
+    api("org.apache.logging.log4j:log4j-api:2.17.1")
+    api("org.apache.logging.log4j:log4j-to-slf4j:2.17.1")
+    api('com.tekion.sdk:tekionconstant:0.0.169-SNAPSHOT')
+    api('com.tekion.sdk:globalsettingsclient:0.0.41-SNAPSHOT')
+    api("com.tekion.sdk:dealerpropertyclient:1.0.53-SNAPSHOT")
+    api('com.tekion.sdk:VIClient:2.0.2.A-SNAPSHOT')
+    api project(":salessettingsclient")
+    api('com.tekion.sdk:DealClient:0.0.428-V3-test5-SNAPSHOT')
+            {
+                exclude group: 'com.tekion.sdk', module: 'paymentcalculationsupport'
+            }
+    api('com.tekion.sdk:slackclient:0.0.1-SNAPSHOT')
+    api('com.tekion.sdk:dealfnimenuclient:2.1.3-SNAPSHOT')
+            {
+                exclude group: "com.tekion.sdk", module: "dealdatamodel"
+                exclude group: "com.tekion.sdk", module: "DealClient"
+                exclude group: "com.tekion.sdk", module: "dealHelper"
+            }
+    api('com.tekion.sdk:medialibraryclient:0.0.28-RG3-SNAPSHOT')
+    api("com.tekion.sdk:preferenceclient:1.0.191.2-SNAPSHOT")
+    api('com.tekion.sdk:clientframework:4.0.5-SNAPSHOT')
+            {
+                exclude group: 'com.tekion.sdk', module: 'tekionconstant'
+            }
+
+    api('com.tekion.sdk:medialibraryclient:0.0.29-codemerge-test1-SNAPSHOT')
+    api('com.tekion.sdk:dealersettingsclient:1.0.15-SNAPSHOT'){
+        exclude group: 'com.tekion.sdk', module: 'globalsettingsclient'
+        exclude group: 'com.tekion.sdk', module: 'dynamodbsupport'
+    }
+    api("com.tekion.sdk:multilingualsupport:0.0.1-ma16-SNAPSHOT")
+    api('com.tekion.sdk:propertiesclient:1.0.9-SNAPSHOT')
+    api('com.tekion.sdk:configsharing:1.0.1-SNAPSHOT')
+    api('com.tekion.sdk:userclient:0.0.98-SNAPSHOT')
+    api('org.springframework.cloud:spring-cloud-starter-loadbalancer')
+    api('com.tekion.sdk:clientframework:4.0.4-SNAPSHOT')
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:2020.0.4"
+        mavenBom("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+        mavenBom 'com.azure:azure-sdk-bom:1.0.5'
+    }
+}

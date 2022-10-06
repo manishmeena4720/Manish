@@ -1,0 +1,84 @@
+{
+  "assetType": "DUE_BILL_SETUP",
+  "fieldMetaData": {
+    "code": {
+      "fieldName": "code",
+      "changeType": "FLAT"
+    },
+    "name": {
+      "fieldName": "name",
+      "changeType": "FLAT"
+    },
+    "languages": {
+      "fieldName": "languages",
+      "changeType": "COMPLEX",
+      "childFieldMetadataMap": {
+        "documentDefault": {
+          "fieldName": "documentDefault",
+          "changeType": "FLAT"
+        }
+      }
+    },
+    "disclosureType": {
+      "fieldName": "disclosureType",
+      "changeType": "FLAT"
+    },
+    "price": {
+      "fieldName": "price",
+      "changeType": "FLAT"
+    },
+    "cost": {
+      "fieldName": "cost",
+      "changeType": "FLAT"
+    },
+    "opCode": {
+      "fieldName": "opCode",
+      "changeType": "FLAT"
+    },
+    "partNumber": {
+      "fieldName": "partNumber",
+      "changeType": "FLAT"
+    },
+    "partId": {
+      "fieldName": "partId",
+      "changeType": "FLAT"
+    },
+    "taxable": {
+      "fieldName": "taxable",
+      "changeType": "FLAT"
+    },
+    "upfront": {
+      "fieldName": "upfront",
+      "changeType": "FLAT"
+    },
+    "taxUpFront": {
+      "fieldName": "taxUpFront",
+      "changeType": "FLAT"
+    },
+    "payType": {
+      "fieldName": "payType",
+      "changeType": "FLAT"
+    },
+    "profitType": {
+      "fieldName": "profitType",
+      "changeType": "FLAT"
+    },
+    "dealerId": {
+      "fieldName": "dealerId",
+      "changeType": "FLAT"
+    },
+    "tenantId": {
+      "fieldName": "tenantId",
+      "changeType": "FLAT"
+    },
+    "residualize": {
+      "fieldName": "residualize",
+      "changeType": "FLAT"
+    },
+    "vehicleEquipmentId": {
+      "fieldName": "vehicleEquipmentId",
+      "changeType": "FLAT"
+    }
+  },
+  "userId": "-1"
+}

@@ -1,0 +1,114 @@
+{
+  "assetType": "FIELD_RULES_SETUP",
+  "fieldMetaData": {
+    "description": {
+      "fieldName": "description",
+      "changeType": "FLAT"
+    },
+    "dealerId": {
+      "fieldName": "dealerId",
+      "changeType": "FLAT"
+    },
+    "tenantId": {
+      "fieldName": "tenantId",
+      "changeType": "FLAT"
+    },
+    "displayName": {
+      "fieldName": "displayName",
+      "changeType": "FLAT"
+    },
+    "status": {
+      "fieldName": "status",
+      "changeType": "FLAT"
+    },
+    "mandatoryFieldActions": {
+      "fieldName": "mandatoryFieldActions",
+      "changeType": "COMPLEX_LIST",
+      "childFieldMetadataMap": {
+        "mandatoryFieldActions": {
+          "fieldName": "mandatoryFieldActions",
+          "changeType": "COMPLEX",
+          "childFieldMetadataMap": {
+            "fields": {
+              "fieldName": "fields",
+              "changeType": "COMPLEX_LIST",
+              "childFieldMetadataMap": {
+                "fields": {
+                  "fieldName": "fields",
+                  "changeType": "COMPLEX",
+                  "childFieldMetadataMap": {
+                    "displayName": {
+                      "fieldName": "displayName",
+                      "changeType": "FLAT"
+                    },
+                    "key": {
+                      "fieldName": "key",
+                      "changeType": "FLAT"
+                    }
+                  }
+                }
+              }
+            },
+            "action": {
+              "fieldName": "action",
+              "changeType": "FLAT"
+            }
+          }
+        }
+      }
+    },
+    "mandatoryFieldConditions": {
+      "fieldName": "mandatoryFieldConditions",
+      "changeType": "COMPLEX_LIST",
+      "childFieldMetadataMap": {
+        "mandatoryFieldConditions": {
+          "fieldName": "mandatoryFieldConditions",
+          "changeType": "COMPLEX",
+          "childFieldMetadataMap": {
+            "displayName": {
+              "fieldName": "displayName",
+              "changeType": "FLAT"
+            },
+            "key": {
+              "fieldName": "key",
+              "changeType": "FLAT"
+            },
+            "operator": {
+              "fieldName": "operator",
+              "changeType": "FLAT"
+            },
+            "value": {
+              "fieldName": "value",
+              "changeType": "FLAT_LIST"
+            }
+          }
+        }
+      }
+    },
+    "mandatoryFieldSituations": {
+      "fieldName": "mandatoryFieldSituations",
+      "changeType": "COMPLEX_LIST",
+      "childFieldMetadataMap": {
+        "mandatoryFieldSituations": {
+          "fieldName": "mandatoryFieldSituations",
+          "changeType": "COMPLEX",
+          "childFieldMetadataMap": {
+            "situation": {
+              "fieldName": "situation",
+              "changeType": "FLAT"
+            },
+            "operator": {
+              "fieldName": "operator",
+              "changeType": "FLAT"
+            },
+            "value": {
+              "fieldName": "value",
+              "changeType": "FLAT"
+            }
+          }
+        }
+      }
+    }
+  },
+  "userId": "-1"
+}
